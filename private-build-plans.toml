@@ -1,0 +1,264 @@
+[buildPlans.SayakMonoNL]
+family = "Sayak Mono NL"
+spacing = "normal"
+serifs = "sans"
+noCvSs = true
+exportGlyphNames = false
+noLigation = true
+
+  [buildPlans.SayakMonoNL.variants]
+  inherits = "ss08"
+
+    [buildPlans.SayakMonoNL.variants.design]
+    four = "semi-open-serifless"
+    five = "upright-arched-serifless"
+    seven = "straight-serifed"
+    eight = "two-circles"
+    nine = "straight-bar"
+    zero = "slashed"
+    capital-n = "standard-serifless"
+    capital-w = "straight-serifless"
+    capital-x = "straight-serifless"
+    a = "double-storey-serifless"
+    g = "single-storey-flat-hook-earless-corner"
+    i = "hooky"
+    l = "zshaped"
+    t = "diagonal-tailed"
+    x = "curly-serifless"
+    y = "straight-turn-serifless"
+    eszet = "sulzbacher-descending-serifless"
+    asterisk = "penta-high"
+    underscore = "above-baseline"
+    caret = "medium"
+    paren = "normal"
+    brace = "curly"
+    number-sign = "slanted"
+    ampersand = "closed"
+    dollar = "open"
+    percent = "rings-continuous-slash"
+    bar = "force-upright"
+    question = "corner"
+    decorative-angle-brackets = "middle"
+
+ 
+[buildPlans.SayakMonoNLTerm]
+family = "Sayak Mono NL Term"
+spacing = "term"
+serifs = "sans"
+noCvSs = true
+exportGlyphNames = false
+noLigation = true
+
+  [buildPlans.SayakMonoNLTerm.variants]
+  inherits = "ss08"
+
+    [buildPlans.SayakMonoNLTerm.variants.design]
+    four = "semi-open-serifless"
+    five = "upright-arched-serifless"
+    seven = "straight-serifed"
+    eight = "two-circles"
+    nine = "straight-bar"
+    zero = "slashed"
+    capital-n = "standard-serifless"
+    capital-w = "straight-serifless"
+    capital-x = "straight-serifless"
+    a = "double-storey-serifless"
+    g = "single-storey-flat-hook-earless-corner"
+    i = "hooky"
+    l = "zshaped"
+    t = "diagonal-tailed"
+    x = "curly-serifless"
+    y = "straight-turn-serifless"
+    eszet = "sulzbacher-descending-serifless"
+    asterisk = "penta-high"
+    underscore = "above-baseline"
+    caret = "medium"
+    paren = "normal"
+    brace = "curly"
+    number-sign = "slanted"
+    ampersand = "closed"
+    dollar = "open"
+    percent = "rings-continuous-slash"
+    bar = "force-upright"
+    question = "corner"
+    decorative-angle-brackets = "middle"
+
+
+
+[buildPlans.SayakMonoNLFixed]
+family = "Sayak Mono NL Fixed"
+spacing = "fixed"
+serifs = "sans"
+noCvSs = true
+exportGlyphNames = false
+noLigation = true
+
+  [buildPlans.SayakMonoNLFixed.variants]
+  inherits = "ss08"
+
+    [buildPlans.SayakMonoNLFixed.variants.design]
+    four = "semi-open-serifless"
+    five = "upright-arched-serifless"
+    seven = "straight-serifed"
+    eight = "two-circles"
+    nine = "straight-bar"
+    zero = "slashed"
+    capital-n = "standard-serifless"
+    capital-w = "straight-serifless"
+    capital-x = "straight-serifless"
+    a = "double-storey-serifless"
+    g = "single-storey-flat-hook-earless-corner"
+    i = "hooky"
+    l = "zshaped"
+    t = "diagonal-tailed"
+    x = "curly-serifless"
+    y = "straight-turn-serifless"
+    eszet = "sulzbacher-descending-serifless"
+    asterisk = "penta-high"
+    underscore = "above-baseline"
+    caret = "medium"
+    paren = "normal"
+    brace = "curly"
+    number-sign = "slanted"
+    ampersand = "closed"
+    dollar = "open"
+    percent = "rings-continuous-slash"
+    bar = "force-upright"
+    question = "corner"
+    decorative-angle-brackets = "middle"
+
+
+
+[buildPlans.SayakMono]
+family = "Sayak Mono"
+spacing = "normal"
+serifs = "sans"
+noCvSs = true
+exportGlyphNames = false
+
+  [buildPlans.SayakMono.variants]
+  inherits = "ss08"
+
+    [buildPlans.SayakMono.variants.design]
+    four = "semi-open-serifless"
+    five = "upright-arched-serifless"
+    seven = "straight-serifed"
+    eight = "two-circles"
+    nine = "straight-bar"
+    zero = "slashed"
+    capital-n = "standard-serifless"
+    capital-w = "straight-serifless"
+    capital-x = "straight-serifless"
+    a = "double-storey-serifless"
+    g = "single-storey-flat-hook-earless-corner"
+    i = "hooky"
+    l = "zshaped"
+    t = "diagonal-tailed"
+    x = "curly-serifless"
+    y = "straight-turn-serifless"
+    eszet = "sulzbacher-descending-serifless"
+    asterisk = "penta-high"
+    underscore = "above-baseline"
+    caret = "medium"
+    paren = "normal"
+    brace = "curly"
+    number-sign = "slanted"
+    ampersand = "closed"
+    dollar = "open"
+    percent = "rings-continuous-slash"
+    bar = "force-upright"
+    question = "corner"
+    decorative-angle-brackets = "middle"
+
+  [buildPlans.SayakMono.ligations]
+  inherits = "clike"
+
+ 
+[buildPlans.SayakMonoTerm]
+family = "Sayak Mono Term"
+spacing = "term"
+serifs = "sans"
+noCvSs = true
+exportGlyphNames = false
+
+  [buildPlans.SayakMonoTerm.variants]
+  inherits = "ss08"
+
+    [buildPlans.SayakMonoTerm.variants.design]
+    four = "semi-open-serifless"
+    five = "upright-arched-serifless"
+    seven = "straight-serifed"
+    eight = "two-circles"
+    nine = "straight-bar"
+    zero = "slashed"
+    capital-n = "standard-serifless"
+    capital-w = "straight-serifless"
+    capital-x = "straight-serifless"
+    a = "double-storey-serifless"
+    g = "single-storey-flat-hook-earless-corner"
+    i = "hooky"
+    l = "zshaped"
+    t = "diagonal-tailed"
+    x = "curly-serifless"
+    y = "straight-turn-serifless"
+    eszet = "sulzbacher-descending-serifless"
+    asterisk = "penta-high"
+    underscore = "above-baseline"
+    caret = "medium"
+    paren = "normal"
+    brace = "curly"
+    number-sign = "slanted"
+    ampersand = "closed"
+    dollar = "open"
+    percent = "rings-continuous-slash"
+    bar = "force-upright"
+    question = "corner"
+    decorative-angle-brackets = "middle"
+
+  [buildPlans.SayakMonoTerm.ligations]
+  inherits = "clike"
+
+
+[buildPlans.SayakMonoFixed]
+family = "Sayak Mono Fixed"
+spacing = "fixed"
+serifs = "sans"
+noCvSs = true
+exportGlyphNames = false
+
+  [buildPlans.SayakMonoFixed.variants]
+  inherits = "ss08"
+
+    [buildPlans.SayakMonoFixed.variants.design]
+    four = "semi-open-serifless"
+    five = "upright-arched-serifless"
+    seven = "straight-serifed"
+    eight = "two-circles"
+    nine = "straight-bar"
+    zero = "slashed"
+    capital-n = "standard-serifless"
+    capital-w = "straight-serifless"
+    capital-x = "straight-serifless"
+    a = "double-storey-serifless"
+    g = "single-storey-flat-hook-earless-corner"
+    i = "hooky"
+    l = "zshaped"
+    t = "diagonal-tailed"
+    x = "curly-serifless"
+    y = "straight-turn-serifless"
+    eszet = "sulzbacher-descending-serifless"
+    asterisk = "penta-high"
+    underscore = "above-baseline"
+    caret = "medium"
+    paren = "normal"
+    brace = "curly"
+    number-sign = "slanted"
+    ampersand = "closed"
+    dollar = "open"
+    percent = "rings-continuous-slash"
+    bar = "force-upright"
+    question = "corner"
+    decorative-angle-brackets = "middle"
+
+  [buildPlans.SayakMonoFixed.ligations]
+  inherits = "clike"
