@@ -16,14 +16,21 @@ noLigation = true
     eight = "two-circles"
     nine = "straight-bar"
     zero = "slashed"
+    capital-a = "curly-serifless"
+    capital-j = "serifed"
     capital-n = "standard-serifless"
-    capital-w = "straight-serifless"
-    capital-x = "straight-serifless"
+    capital-v = "curly-serifless"
+    capital-w = "curly-serifless"
+    capital-x = "curly-serifless"
+    capital-y = "curly-serifless"
     a = "double-storey-serifless"
     g = "single-storey-flat-hook-earless-corner"
-    i = "hooky"
+    h = "straight-motion-serifed"
+    j = "serifed"
     l = "zshaped"
-    t = "diagonal-tailed"
+    t = "bent-hook"
+    v = "curly-serifless"
+    w = "curly-serifless"
     x = "curly-serifless"
     y = "straight-turn-serifless"
     eszet = "sulzbacher-descending-serifless"
@@ -39,6 +46,11 @@ noLigation = true
     bar = "force-upright"
     question = "corner"
     decorative-angle-brackets = "middle"
+
+[buildPlans.SayakMonoNL.widths.Normal]
+shape = 600
+menu = 5
+css = "normal"
 
  
 [buildPlans.SayakMonoNLTerm]
@@ -59,14 +71,21 @@ noLigation = true
     eight = "two-circles"
     nine = "straight-bar"
     zero = "slashed"
+    capital-a = "curly-serifless"
+    capital-j = "serifed"
     capital-n = "standard-serifless"
-    capital-w = "straight-serifless"
-    capital-x = "straight-serifless"
+    capital-v = "curly-serifless"
+    capital-w = "curly-serifless"
+    capital-x = "curly-serifless"
+    capital-y = "curly-serifless"
     a = "double-storey-serifless"
     g = "single-storey-flat-hook-earless-corner"
-    i = "hooky"
+    h = "straight-motion-serifed"
+    j = "serifed"
     l = "zshaped"
-    t = "diagonal-tailed"
+    t = "bent-hook"
+    v = "curly-serifless"
+    w = "curly-serifless"
     x = "curly-serifless"
     y = "straight-turn-serifless"
     eszet = "sulzbacher-descending-serifless"
@@ -83,6 +102,10 @@ noLigation = true
     question = "corner"
     decorative-angle-brackets = "middle"
 
+[buildPlans.SayakMonoNLTerm.widths.Normal]
+shape = 600
+menu = 5
+css = "normal"
 
 
 [buildPlans.SayakMonoNLFixed]
@@ -103,14 +126,21 @@ noLigation = true
     eight = "two-circles"
     nine = "straight-bar"
     zero = "slashed"
+    capital-a = "curly-serifless"
+    capital-j = "serifed"
     capital-n = "standard-serifless"
-    capital-w = "straight-serifless"
-    capital-x = "straight-serifless"
+    capital-v = "curly-serifless"
+    capital-w = "curly-serifless"
+    capital-x = "curly-serifless"
+    capital-y = "curly-serifless"
     a = "double-storey-serifless"
     g = "single-storey-flat-hook-earless-corner"
-    i = "hooky"
+    h = "straight-motion-serifed"
+    j = "serifed"
     l = "zshaped"
-    t = "diagonal-tailed"
+    t = "bent-hook"
+    v = "curly-serifless"
+    w = "curly-serifless"
     x = "curly-serifless"
     y = "straight-turn-serifless"
     eszet = "sulzbacher-descending-serifless"
@@ -127,6 +157,10 @@ noLigation = true
     question = "corner"
     decorative-angle-brackets = "middle"
 
+[buildPlans.SayakMonoNLFixed.widths.Normal]
+shape = 600
+menu = 5
+css = "normal"
 
 
 [buildPlans.SayakMono]
@@ -146,14 +180,21 @@ exportGlyphNames = false
     eight = "two-circles"
     nine = "straight-bar"
     zero = "slashed"
+    capital-a = "curly-serifless"
+    capital-j = "serifed"
     capital-n = "standard-serifless"
-    capital-w = "straight-serifless"
-    capital-x = "straight-serifless"
+    capital-v = "curly-serifless"
+    capital-w = "curly-serifless"
+    capital-x = "curly-serifless"
+    capital-y = "curly-serifless"
     a = "double-storey-serifless"
     g = "single-storey-flat-hook-earless-corner"
-    i = "hooky"
+    h = "straight-motion-serifed"
+    j = "serifed"
     l = "zshaped"
-    t = "diagonal-tailed"
+    t = "bent-hook"
+    v = "curly-serifless"
+    w = "curly-serifless"
     x = "curly-serifless"
     y = "straight-turn-serifless"
     eszet = "sulzbacher-descending-serifless"
@@ -173,6 +214,11 @@ exportGlyphNames = false
   [buildPlans.SayakMono.ligations]
   inherits = "clike"
 
+[buildPlans.SayakMono.widths.Normal]
+shape = 600
+menu = 5
+css = "normal"
+
  
 [buildPlans.SayakMonoTerm]
 family = "Sayak Mono Term"
@@ -191,14 +237,21 @@ exportGlyphNames = false
     eight = "two-circles"
     nine = "straight-bar"
     zero = "slashed"
+    capital-a = "curly-serifless"
+    capital-j = "serifed"
     capital-n = "standard-serifless"
-    capital-w = "straight-serifless"
-    capital-x = "straight-serifless"
+    capital-v = "curly-serifless"
+    capital-w = "curly-serifless"
+    capital-x = "curly-serifless"
+    capital-y = "curly-serifless"
     a = "double-storey-serifless"
     g = "single-storey-flat-hook-earless-corner"
-    i = "hooky"
+    h = "straight-motion-serifed"
+    j = "serifed"
     l = "zshaped"
-    t = "diagonal-tailed"
+    t = "bent-hook"
+    v = "curly-serifless"
+    w = "curly-serifless"
     x = "curly-serifless"
     y = "straight-turn-serifless"
     eszet = "sulzbacher-descending-serifless"
@@ -218,6 +271,11 @@ exportGlyphNames = false
   [buildPlans.SayakMonoTerm.ligations]
   inherits = "clike"
 
+[buildPlans.SayakMonoTerm.widths.Normal]
+shape = 600
+menu = 5
+css = "normal"
+
 
 [buildPlans.SayakMonoFixed]
 family = "Sayak Mono Fixed"
@@ -236,14 +294,21 @@ exportGlyphNames = false
     eight = "two-circles"
     nine = "straight-bar"
     zero = "slashed"
+    capital-a = "curly-serifless"
+    capital-j = "serifed"
     capital-n = "standard-serifless"
-    capital-w = "straight-serifless"
-    capital-x = "straight-serifless"
+    capital-v = "curly-serifless"
+    capital-w = "curly-serifless"
+    capital-x = "curly-serifless"
+    capital-y = "curly-serifless"
     a = "double-storey-serifless"
     g = "single-storey-flat-hook-earless-corner"
-    i = "hooky"
+    h = "straight-motion-serifed"
+    j = "serifed"
     l = "zshaped"
-    t = "diagonal-tailed"
+    t = "bent-hook"
+    v = "curly-serifless"
+    w = "curly-serifless"
     x = "curly-serifless"
     y = "straight-turn-serifless"
     eszet = "sulzbacher-descending-serifless"
@@ -262,3 +327,8 @@ exportGlyphNames = false
 
   [buildPlans.SayakMonoFixed.ligations]
   inherits = "clike"
+
+[buildPlans.SayakMonoFixed.widths.Normal]
+shape = 600
+menu = 5
+css = "normal"
