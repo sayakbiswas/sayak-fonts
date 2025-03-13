@@ -3,3 +3,7 @@
 
 # Recognize PatEL files for GitHub language stats
 *.ptl linguist-language=PatEL
+
+
+# Treat PNG files as binary
+*.png binary
