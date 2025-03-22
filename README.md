@@ -7,6 +7,7 @@ Monospaced fonts for coding and terminal based on Iosevka
 * **Sayak Mono Term** - Variant of Sayak Mono with narrower glyphs to fit columnar requirements of terminal applications
 * **Sayak Mono NL** - Monospaced fonts without ligatures
 * **Sayak Mono NL Term** - Specialized terminal variant of Sayak Mono NL
+* **Sayak Sans** - Quasi-proportional variant for usage on the web
 
 ### Weights
 The fonts come in four weights: Light, Regular, Medium, Bold. Every variant also comes with an italic slope.
@@ -31,3 +32,4 @@ Download the latest release from the Releases page and install using preferred m
 2. Edit `private-build-plans.toml` to customize glyphs, shapes, width and weights. 
 3. Run `npm install`.
 4. Run `npm run build -- ttf::<font family name>`
+5. To build the webfont Sayak Sans, run: `npm run build -- webfont::SayakSans`
