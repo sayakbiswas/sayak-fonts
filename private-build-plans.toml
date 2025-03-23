@@ -84,7 +84,7 @@ menu = "italic"
 css = "italic" 
 
 [buildPlans.SayakMonoNL.widths.normal]
-shape = 548 
+shape = 600 
 menu = 5
 css = "normal"
 
@@ -176,7 +176,7 @@ menu = "italic"
 css = "italic" 
 
 [buildPlans.SayakMonoNLTerm.widths.normal]
-shape = 548 
+shape = 600 
 menu = 5
 css = "normal"
 
@@ -269,7 +269,7 @@ menu = "italic"
 css = "italic" 
 
 [buildPlans.SayakMono.widths.normal]
-shape = 548 
+shape = 600
 menu = 5
 css = "normal"
 
@@ -363,7 +363,7 @@ menu = "italic"
 css = "italic" 
 
 [buildPlans.SayakMonoTerm.widths.normal]
-shape = 548 
+shape = 600
 menu = 5
 css = "normal"
 
