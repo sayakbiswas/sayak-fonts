@@ -17,28 +17,45 @@ glyph-block Letter-Latin-Lower-P : begin
 		include : tagged 'bowl' : OBarLeft.shape
 		include : tagged 'stemLeft' : VBar.l SB Descender Ascender
 
-	define [EaredBody] : with-params [[left SB] [right RightSB] [sw Stroke]] : glyph-proc
+	define [EaredBody] : with-params [[left SB] [right RightSB] [sw Stroke] [ada SmallArchDepthA] [adb SmallArchDepthB]] : glyph-proc
 		include : tagged 'bowl' : OBarLeft.shape
 			left  -- left
 			right -- right
 			sw    -- sw
-			fine  -- (ShoulderFine * sw / Stroke)
+			fine  -- (ShoulderFine * (sw / Stroke))
+			ada   -- ada
+			adb   -- adb
 		include : tagged 'stemLeft' : VBar.l left Descender XH sw
 
-	define [EarlessCornerBody] : with-params [[left SB] [right RightSB] [sw Stroke]] : glyph-proc
-		include : tagged 'bowl' : OBarLeft.toothlessTop (rise -- DToothlessRise) (mBlend -- DMBlend)
+	define [FlatTopBody] : with-params [[left SB] [right RightSB] [sw Stroke] [ada SmallArchDepthA] [adb SmallArchDepthB]] : glyph-proc
+		include : tagged 'bowl' : OBarLeft.earlessCorner
 			left  -- left
 			right -- right
 			sw    -- sw
-			fine  -- (ShoulderFine * sw / Stroke)
+			fine  -- (ShoulderFine * (sw / Stroke))
+			ada   -- ada
+			adb   -- adb
+			rise  -- 0
+		include : tagged 'stemLeft' : VBar.l left Descender XH sw
+
+	define [EarlessCornerBody] : with-params [[left SB] [right RightSB] [sw Stroke] [ada SmallArchDepthA] [adb SmallArchDepthB]] : glyph-proc
+		include : tagged 'bowl' : OBarLeft.earlessCorner
+			left  -- left
+			right -- right
+			sw    -- sw
+			fine  -- (ShoulderFine * (sw / Stroke))
+			ada   -- ada
+			adb   -- adb
 		include : tagged 'stemLeft' : VBar.l left Descender (XH - DToothlessRise) sw
 
-	define [EarlessRoundedBody] : with-params [[left SB] [right RightSB] [sw Stroke]] : glyph-proc
-		include : tagged 'bowl' : OBarLeft.roundedTop (yTerminal -- Descender)
+	define [EarlessRoundedBody] : with-params [[left SB] [right RightSB] [sw Stroke] [ada SmallArchDepthA] [adb SmallArchDepthB]] : glyph-proc
+		include : tagged 'bowl' : OBarLeft.earlessRounded (yTerminal -- Descender)
 			left  -- left
 			right -- right
 			sw    -- sw
-			fine  -- (ShoulderFine * sw / Stroke)
+			fine  -- (ShoulderFine * (sw / Stroke))
+			ada   -- ada
+			adb   -- adb
 
 	define [SmallPSerifLT df top _sw] : return [SerifFrame.fromDf df top Descender (swRef -- _sw)].lt.outer
 	define [SmallPSerifLB df top _sw] : return [SerifFrame.fromDf df top Descender (swRef -- _sw)].lb.fullSide
@@ -51,6 +68,7 @@ glyph-block Letter-Latin-Lower-P : begin
 	define PConfig : SuffixCfg.weave
 		object # body
 			eared                EaredBody
+			flatTop              FlatTopBody
 			earlessCorner        EarlessCornerBody
 			earlessRounded       EarlessRoundedBody
 		object # serifs
@@ -106,7 +124,7 @@ glyph-block Letter-Latin-Lower-P : begin
 				SB + [HSwToV HalfStroke] + MidJutSide + tinyGap
 
 			include : PalatalHook.r
-				x -- [mix [arch.adjust-x.bot Middle] RightSB 0.75]
+				x -- [mix [Arch.adjust-x.bot Middle] RightSB 0.75]
 				y -- 0
 				yAttach -- [mix O SmallArchDepthA : archv.yFromX 0.75]
 				maskOut -- [intersection [MaskBelow 0] [MaskLeft xMask]]

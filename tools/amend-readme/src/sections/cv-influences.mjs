@@ -9,7 +9,8 @@ export default async function processCvInfluences(argv) {
 		argv.charMapObliquePath,
 	);
 
-	let m = {
+	const m = {
+		typographic: new Map(),
 		upright: new Map(),
 		italic: new Map(),
 	};
@@ -17,6 +18,12 @@ export default async function processCvInfluences(argv) {
 	for (const block of cl.unique.unicodeCoverage) {
 		for (const ch of block.characters) {
 			if (!ch.inFont) continue;
+			addToCvInfluenceMap(
+				cl.unique.featureSeries,
+				m.typographic,
+				ch.lch,
+				ch.typographicFeatureSets,
+			);
 			addToCvInfluenceMap(
 				cl.unique.featureSeries,
 				m.upright,
@@ -28,6 +35,10 @@ export default async function processCvInfluences(argv) {
 	}
 
 	const md = new MdCol("Section-CV-Influences");
+	md.log(`### Typographic features`);
+	md.log(``);
+	logCvInfluenceMap(md, m.typographic);
+	md.log(``);
 	md.log(`### Upright CV influences`);
 	md.log(``);
 	logCvInfluenceMap(md, m.upright);
@@ -40,9 +51,9 @@ export default async function processCvInfluences(argv) {
 }
 
 function addToCvInfluenceMap(featureSeries, m, lch, ids) {
-	if (!ids || !ids.length) return;
+	if (!ids?.length) return;
 	for (const id of ids) {
-		let fs = featureSeries[id];
+		const fs = featureSeries[id];
 		if (!fs) continue;
 		let s = m.get(fs.name);
 		if (!s) {
@@ -54,21 +65,21 @@ function addToCvInfluenceMap(featureSeries, m, lch, ids) {
 }
 
 function logCvInfluenceMap(md, m) {
-	let a = Array.from(m).sort((a, b) => a[0].toUpperCase().localeCompare(b[0].toUpperCase()));
+	const a = Array.from(m).sort((a, b) => a[0].toUpperCase().localeCompare(b[0].toUpperCase()));
 	for (const [tag, chars] of a) {
 		md.log(`- \`${tag}\`:`);
 		md.log(``);
-		md.log(`  ` + Array.from(chars).map(formatLch).join(", "));
+		md.log(`  ${Array.from(chars).map(formatLch).join(", ")}`);
 		md.log(``);
 	}
 }
 
 function formatLch(lch) {
-	return mdEscape(lch) + " (`U+" + lch.toString(16).padStart(4, "0").toUpperCase() + "`)";
+	return `${mdEscape(lch)} (\`U+${lch.toString(16).padStart(4, "0").toUpperCase()}\`)`;
 }
 
 function mdEscape(lch) {
-	let ch = String.fromCodePoint(lch);
+	const ch = String.fromCodePoint(lch);
 	if (ch === "\\") return "\\\\";
 	if (ch === "`") return "\\`";
 	if (ch === "*") return "\\*";

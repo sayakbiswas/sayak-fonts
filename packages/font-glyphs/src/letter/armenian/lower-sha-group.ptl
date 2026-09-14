@@ -8,13 +8,24 @@ glyph-module
 glyph-block Letter-Armenian-Lower-Sha-Group : begin
 	glyph-block-import CommonShapes
 	glyph-block-import Common-Derivatives
-	glyph-block-import Letter-Shared-Shapes : SerifFrame
-	glyph-block-import Letter-Armenian-Shared-Shapes : ArmHBar TwoNeck
+	glyph-block-import Letter-Armenian-Shared-Shapes : ArmHBar
 
 	# Common Params
 	define barPos : XH / 2
 	define highBarPos XH
 	define jut Jut
+
+	glyph-block-export TwoNeck
+	define [TwoNeck df top bot _left _right _adb _flatp] : begin
+		local adb : fallback _adb SmallArchDepthB
+		local flatp : fallback _flatp 0.75
+		local left : fallback _left df.leftSB
+		local right : fallback _right df.rightSB
+		local refY : top - adb * 1.5 - df.mvs / 2 * (1 - TanSlope)
+		return : list
+			g4.down.mid right (top - adb)
+			flat [mix left right flatp] [mix (bot + df.mvs) refY flatp]
+			curl left (bot + df.mvs) [widths.lhs df.mvs]
 
 	do "Sha"
 		create-glyph 'armn/sha' 0x577 : glyph-proc
@@ -23,7 +34,7 @@ glyph-block Letter-Armenian-Lower-Sha-Group : begin
 			include : dispiro
 				widths.rhs df.mvs
 				g4 df.leftSB (XH - SHook)
-				hookstart XH (sw -- df.mvs)
+				HookStart XH (sw -- df.mvs)
 				TwoNeck df XH Descender
 			include : [ArmHBar.normal df].desc
 
@@ -33,17 +44,17 @@ glyph-block Letter-Armenian-Lower-Sha-Group : begin
 			include : df.markSet.p
 			local x1 : mix df.leftSB df.rightSB 0.1
 			local x2 : mix df.leftSB df.rightSB 0.9
-			local y2 : XH / 2
+			local y2 : barPos - df.mvs / 2
 			include : dispiro
-				widths.center df.mvs
-				flat (x1 + [HSwToV : 0.5 * df.mvs]) XH [heading Downward]
-				curl (x1 + [HSwToV : 0.5 * df.mvs]) [Math.min (y2 + 0.8 * SmallArchDepthB) (XH - TINY)] [heading Downward]
+				widths.lhs df.mvs
+				flat x1 XH [heading Downward]
+				curl x1 [Math.min (y2 + 0.8 * SmallArchDepthB) (XH - TINY)] [heading Downward]
 				arcvh
-				flat (df.middle + [HSwToV : 0.5 * df.mvs]) y2
+				flat (df.middle + [HSwToV : 0.2 * df.mvs]) y2
 				curl x2 y2 [heading Rightward]
 			include : dispiro
 				widths.rhs df.mvs
-				flat x2 (y2 - df.mvs / 2)
+				flat x2 y2
 				curl df.leftSB (Descender + df.mvs) [widths.lhs df.mvs]
 			include : [ArmHBar.normal df].desc
 
@@ -60,7 +71,7 @@ glyph-block Letter-Armenian-Lower-Sha-Group : begin
 				straight.up.start x1 y1 [heading Upward]
 				g4 [mix x1 df.leftSB 0.5] [mix y1 @y3 0.5] [widths.center df.mvs]
 				g4.up.mid (df.leftSB + OX) (@y3 = XH - 0.875 * SmallArchDepthA) [widths.rhs df.mvs]
-				arch.rhs XH (sw -- df.mvs)
+				Arch.rhs XH (sw -- df.mvs)
 				TwoNeck df XH Descender
 
 			local dx : df.leftSB - df.rightSB

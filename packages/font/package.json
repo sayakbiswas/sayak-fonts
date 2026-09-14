@@ -1,6 +1,6 @@
 {
   "name": "@iosevka/font",
-  "version": "33.0.1",
+  "version": "34.8.1",
   "private": true,
   "exports": {
     ".": "./src/index.mjs",
@@ -10,16 +10,17 @@
   },
   "dependencies": {
     "@iarna/toml": "^2.2.5",
-    "@iosevka/font-glyphs": "33.0.1",
-    "@iosevka/font-otl": "33.0.1",
-    "@iosevka/geometry": "33.0.1",
-    "@iosevka/geometry-cache": "33.0.1",
-    "@iosevka/glyph": "33.0.1",
-    "@iosevka/param": "33.0.1",
-    "@iosevka/util": "33.0.1",
-    "harfbuzzjs": "^0.4.4",
-    "ot-builder": "^1.7.5",
-    "semver": "^7.6.3",
-    "@msgpack/msgpack": "^2.8.0"
+    "@iosevka/font-glyphs": "34.8.1",
+    "@iosevka/font-otl": "34.8.1",
+    "@iosevka/geometry": "34.8.1",
+    "@iosevka/geometry-cache": "34.8.1",
+    "@iosevka/glyph": "34.8.1",
+    "@iosevka/param": "34.8.1",
+    "@iosevka/util": "34.8.1",
+    "harfbuzzjs": "^0.10.3",
+    "ot-builder": "^1.8.0",
+    "semver": "^7.8.0",
+    "is-in-ci": "^2.0.0",
+    "@msgpack/msgpack": "^3.1.3"
   }
 }
